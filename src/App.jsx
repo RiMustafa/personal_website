@@ -4,13 +4,13 @@ function App() {
   return (
     <>
       <div className="section section-light-grey">
-        Section 1
+        This is me testing
       </div>
       <div className="section section-medium-grey">
-        Section 2
+      .
       </div>
       <div className="section section-dark-grey">
-        Section 3
+      .
       </div>
     </>
   );
