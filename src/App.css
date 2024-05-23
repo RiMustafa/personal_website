@@ -1,8 +1,20 @@
-body {
+.section {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 24px;
+  color: white;
 }
-div {
-  text-align: center;
+
+.section-light-grey {
+  background-color: #d3d3d3;
+}
+
+.section-medium-grey {
+  background-color: #a9a9a9;
+}
+
+.section-dark-grey {
+  background-color: #696969;
 }
