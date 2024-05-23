@@ -6,7 +6,7 @@ function App() {
     <header className='header'>
     Riyans Website
     </header>
-      <div className="section section-light-grey">
+      <div className="section section-white">
         Hello I am Riyan! I am an aspiring software engineer, here is some of my work!
       </div>
       <div className="Github">
