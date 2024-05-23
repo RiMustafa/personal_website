@@ -10,7 +10,7 @@ function App() {
         Hello I am Riyan! I am an aspiring software engineer, here is some of my work!
       </div>
       <div className="Github">
-        <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer">
           <button className="github-button">Visit My GitHub</button>
         </a>
       </div>
