@@ -20,6 +20,13 @@ const App = () => {
         <p>Aspiring Software Engineer</p>
       </section>
 
+      <section>       
+         <div className="social-buttons">
+          <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github">GitHub</a>
+          <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin">LinkedIn</a>
+        </div>
+        </section>
+
       <section id="about">
         <h2>About Me</h2>
         <p>I'm a freelance web developer and recent college graduate with a degree in Computer Science! I am passionate about bringing a modern look and improved performance to the web through the use of frameworks like React and Vue. Although my professional focus has tailored toward the web, during my degree I accrued skills that allow me to create applications with a multitude of technologies and languages. Most recently I have been developing games with Python and building full-stack applications with relational based databases (specifically PostgreSQL).</p>
@@ -51,10 +58,6 @@ const App = () => {
           
           <button type="submit">Submit</button>
         </form>
-        <div className="social-buttons">
-          <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github">GitHub</a>
-          <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin">LinkedIn</a>
-        </div>
       </section>
 
       <footer>
