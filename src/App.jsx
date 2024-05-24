@@ -1,27 +1,64 @@
+import React from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <>
-    <header className='header'>
-    Riyans Website
-    </header>
-      <div className="section section-white">
-        Hello I am Riyan! I am an aspiring software engineer, here is some of my work!
-      </div>
-      <div className="Github">
-        <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer">
-          <button className="github-button">Visit My GitHub</button>
-        </a>
-      </div>
-      <div className="section section-medium-grey">
-      .
-      </div>
-      <div className="section section-dark-grey">
-      .
-      </div>
-    </>  
-    );
-}
+    <div className="App">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="home" className="hero">
+        <h1>Riyan Mustafa</h1>
+        <p>Aspiring Software Engineer</p>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a freelance web developer and recent college gradute with a degree in Computer Science! I am passionate about bringing a modern look and improved performance to the web through the use of frameworks like React and Vue.
+        Although my professional focus has tailored toward the web, during my degree I accrued skills that allow me to create applications with a multitude of technologies and languages. Most recently I have been developing games with python and building fullstack applications with relational based databases (specifically PostGres).</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div className="project">
+          <h3>Capstone Project</h3>
+          <p>Description of project 1.</p>
+        </div>
+        <div className="project">
+          <h3>TBD</h3>
+          <p>Description of project TBD</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <label htmlFor="name">Name: Riyan Mustafa</label>
+          <input type="text" id="name" name="name" required />
+          
+          <label htmlFor="email">Email: riyanmustafa22@gmail.com</label>
+          <input type="email" id="email" name="email" required />
+          
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>© 2024 Riyan Mustafa</p>
+      </footer>
+    </div>
+  );
+};
 
 export default App;
