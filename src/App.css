@@ -85,3 +85,28 @@ footer {
 #contact button:hover {
   background-color: #555;
 }
+
+.social-buttons {
+  margin-top: 1rem;
+}
+
+.social-button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+}
+
+.github {
+  background-color: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.social-button:hover {
+  opacity: 0.8;
+}
