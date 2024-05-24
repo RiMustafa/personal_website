@@ -36,7 +36,7 @@ const App = () => {
         <h2>Projects</h2>
         <div className="project">
           <h3>Capstone Project</h3>
-          <p>Description of project 1.</p>
+          <p>In a recent project, I collaborated with the Greater Cleveland Partnership (GCP) to bolster the career readiness of high school and college students. GCP, an organization dedicated to economic development in the Cleveland area, sought to provide students with a job-search tool tailored to their needs. Previous iterations of the tool had been confined to Northeast Ohio, prompting our efforts to expand its reach and functionality. Our primary goal was to enhance the tool's efficacy by incorporating additional geographical areas and refining search parameters. This expansion aimed to empower students with a comprehensive platform to navigate their career paths effectively, aligning with GCP's mission to foster growth and opportunity in the region.</p>
         </div>
         <div className="project">
           <h3>TBD</h3>
