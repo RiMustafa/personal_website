@@ -5,17 +5,18 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <section id="home" className="hero">
+  <section id="home" className="hero">
         <h1>Riyan Mustafa</h1>
         <p>Aspiring Software Engineer</p>
       </section>
@@ -25,7 +26,7 @@ const App = () => {
           <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github">GitHub</a>
           <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin">LinkedIn</a>
         </div>
-        </section>
+      </section>
 
       <section id="about">
         <h2>About Me</h2>
@@ -41,6 +42,14 @@ const App = () => {
         <div className="project">
           <h3>TBD</h3>
           <p>Description of project TBD</p>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div className="education-entry">
+          <h3>Bachelors in Computer Science</h3>
+          <p>Cleveland State University, 2024</p>
         </div>
       </section>
 

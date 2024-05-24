@@ -125,9 +125,9 @@ footer {
   opacity: 0.8;
 }
 
-/* Animation styles */
 #about,
-#projects {
+#projects,
+#education { 
   text-align: left;
   animation: slideInFromLeft 1s ease-in-out forwards;
 }
