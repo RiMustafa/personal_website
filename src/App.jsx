@@ -22,7 +22,9 @@ const App = () => {
 
       <section>       
          <div className="social-buttons">
-          <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github">GitHub</a>
+          <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github">
+            <img src={githubLogo} alt="GitHub" />
+          </a>
           <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin">LinkedIn</a>
         </div>
         </section>

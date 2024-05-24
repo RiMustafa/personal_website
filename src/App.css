@@ -1,3 +1,4 @@
+/* App.css */
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-100%);
@@ -115,6 +116,12 @@ footer {
 
 .github {
   background-color: #333;
+}
+
+.github img {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
 }
 
 .linkedin {
