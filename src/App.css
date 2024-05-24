@@ -1,3 +1,23 @@
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,7 +34,7 @@ nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 nav ul li {
@@ -36,6 +56,7 @@ section {
   border: 1px solid #ccc;
   margin: 1rem;
   padding: 1rem;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 footer {
@@ -102,4 +123,11 @@ footer {
 
 .social-button:hover {
   opacity: 0.8;
+}
+
+/* Animation styles */
+#about,
+#projects {
+  text-align: left;
+  animation: slideInFromLeft 1s ease-in-out forwards;
 }
