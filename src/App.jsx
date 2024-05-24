@@ -22,8 +22,7 @@ const App = () => {
 
       <section id="about">
         <h2>About Me</h2>
-        <p>I'm a freelance web developer and recent college gradute with a degree in Computer Science! I am passionate about bringing a modern look and improved performance to the web through the use of frameworks like React and Vue.
-        Although my professional focus has tailored toward the web, during my degree I accrued skills that allow me to create applications with a multitude of technologies and languages. Most recently I have been developing games with python and building fullstack applications with relational based databases (specifically PostGres).</p>
+        <p>I'm a freelance web developer and recent college graduate with a degree in Computer Science! I am passionate about bringing a modern look and improved performance to the web through the use of frameworks like React and Vue. Although my professional focus has tailored toward the web, during my degree I accrued skills that allow me to create applications with a multitude of technologies and languages. Most recently I have been developing games with Python and building full-stack applications with relational based databases (specifically PostgreSQL).</p>
       </section>
 
       <section id="projects">
@@ -41,10 +40,10 @@ const App = () => {
       <section id="contact">
         <h2>Contact</h2>
         <form>
-          <label htmlFor="name">Name: Riyan Mustafa</label>
+          <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
           
-          <label htmlFor="email">Email: riyanmustafa22@gmail.com</label>
+          <label htmlFor="email">Email:</label>
           <input type="email" id="email" name="email" required />
           
           <label htmlFor="message">Message:</label>
