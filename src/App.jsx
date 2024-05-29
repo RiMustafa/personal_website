@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-
+import LogoStyle from './components/LogoStyle';
 const Modal = ({ id, onClose, children, isOpen }) => {
   const closeModal = () => {
     onClose(id);
@@ -36,6 +36,7 @@ const App = () => {
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -45,8 +46,8 @@ const App = () => {
         <h1>Riyan Mustafa</h1>
         <p>Aspiring Software Engineer</p>
         <div className="social-buttons">
-          <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github"><i className="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i className="fa-brands fa-linkedin"></i></a>
         </div>
       </section>
 
@@ -95,6 +96,65 @@ const App = () => {
           <div>
             <h3>Bachelors in Computer Science</h3>
             <p>Cleveland State University, 2024</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div className="skills">
+          <div className="skill">
+              <h1>Web Development</h1>
+            <div className="skilllist">
+            <LogoStyle 
+            faname="fa-brands fa-react"
+            name="react" />
+            <LogoStyle 
+            faname="fa-brands fa-html5"
+            name="HTML" />
+            <LogoStyle 
+            faname="fa-brands fa-js"
+            name="JavaScript" />
+            <LogoStyle 
+            faname="fa-brands fa-css3-alt"
+            name="CSS" />
+            </div>
+          </div>
+          <div className="skill">
+            <h1>Backend Development</h1>
+            <div className="skilllist">
+            <LogoStyle 
+            faname="fa-brands fa-node"
+            name="Node.js" />
+            <LogoStyle 
+            faname="fa-brands fa-python"
+            name="Python" />
+            <LogoStyle 
+            faname="fa-brands fa-c"
+            name="C" />
+            <LogoStyle 
+            faname="fa-brands fa-java"
+            name="Java" />
+          </div>
+          </div>
+          <div className="skill">
+            <h1>Database</h1>
+            <div className="skilllist">
+            <LogoStyle 
+            faname="fa-brands fa-docker"
+            name="Docker" />
+            <LogoStyle 
+            faname="fa-solid fa-database"
+            name="MySQL" />
+          </div>
+          </div>
+          <div className="skill">
+            <h1>Other</h1>
+            <div className="skilllist">
+            <LogoStyle 
+            faname="fa-brands fa-github"
+            name="Github" />
+            </div>
           </div>
         </div>
       </section>
