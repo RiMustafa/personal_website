@@ -1,25 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
+const Modal = ({ id, onClose, children, isOpen }) => {
+  const closeModal = () => {
+    onClose(id);
+  };
+
+  return (
+    <div id={id} className="modal" style={{ display: isOpen ? 'block' : 'none' }}>
+      <div className="modal-content">
+        <span className="close" onClick={closeModal}>&times;</span>
+        {children}
+      </div>
+    </div>
+  );
+};
+
 const App = () => {
+  const [openModalId, setOpenModalId] = useState('');
+
+  const openModal = (modalId) => {
+    setOpenModalId(modalId);
+  };
+
+  const closeModal = () => {
+    setOpenModalId('');
+  };
+
   return (
     <div className="App">
       <header id="head">
-    <nav id="menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav id="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-  <section id="home" className="hero">
+      <section id="home" className="hero">
         <h1>Riyan Mustafa</h1>
         <p>Aspiring Software Engineer</p>
-         <div className="social-buttons">
+        <div className="social-buttons">
           <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i class="fa-brands fa-linkedin"></i></a>
         </div>
@@ -32,38 +57,62 @@ const App = () => {
 
       <section id="projects">
         <h2>Projects</h2>
-        <div className="project">
-          <h3>Capstone Project</h3>
-          <p>In a recent project, I collaborated with the Greater Cleveland Partnership (GCP) to bolster the career readiness of high school and college students. GCP, an organization dedicated to economic development in the Cleveland area, sought to provide students with a job-search tool tailored to their needs. Previous iterations of the tool had been confined to Northeast Ohio, prompting our efforts to expand its reach and functionality. Our primary goal was to enhance the tool's efficacy by incorporating additional geographical areas and refining search parameters. This expansion aimed to empower students with a comprehensive platform to navigate their career paths effectively, aligning with GCP's mission to foster growth and opportunity in the region.</p>
-        </div>
-        <div className="project">
-          <h3>TBD</h3>
-          <p>Description of project TBD</p>
+        <div className="project-grid">
+          <div className="proj-1">
+            <div className="overlay">
+              <button className="learn-more-btn" onClick={() => openModal('modal1')}>Learn More</button>
+            </div>
+          </div>
+          <div className="proj-2">
+            <div className="overlay">
+              <button className="learn-more-btn" onClick={() => openModal('modal2')}>Learn More</button>
+            </div>
+          </div>
+          <div className="proj-3">
+            <div className="overlay">
+              <button className="learn-more-btn" onClick={() => openModal('modal3')}>Learn More</button>
+            </div>
+          </div>
         </div>
       </section>
 
+      <Modal id="modal1" onClose={closeModal} isOpen={openModalId === 'modal1'}>
+        <p>The Greater Cleveland Partnership (GCP) is an organization dedicated to helping high school and college students prepare for their careers. In line with this mission, they required a job-search tool to assist their students in finding employment opportunities. Previous iterations of the app were primarily focused on Northeast Ohio. However, the main goal of the project was to enhance the searching potential by expanding the tool to include other locations and adding more detailed search parameters. This expansion aimed to provide students with a broader range of job opportunities and better match their skills and preferences with available positions.</p>
+      </Modal>
+
+      <Modal id="modal2" onClose={closeModal} isOpen={openModalId === 'modal2'}>
+        <p>My personal portfolio website serves as a comprehensive project showcasing information about me and my ongoing and completed projects. It features details about my education, highlighting the schools I attended, as well as my proficiency in various programming languages. Through this platform, I aim to provide visitors with insights into my background, skills, and the projects I'm involved in, creating a centralized hub for my professional endeavors.</p>
+      </Modal>
+
+      <Modal id="modal3" onClose={closeModal} isOpen={openModalId === 'modal3'}>
+        <p>Project 3 details...</p>
+      </Modal>
+
       <section id="education">
         <h2>Education</h2>
-        <div className="education-entry">
-          <h3>Bachelors in Computer Science</h3>
-          <p>Cleveland State University, 2024</p>
+        <div className="education-item">
+          <img src="CSU.png" alt="Cleveland State University Logo"/>
+          <div>
+            <h3>Bachelors in Computer Science</h3>
+            <p>Cleveland State University, 2024</p>
+          </div>
         </div>
       </section>
 
       <section id="contact">
-     <h2>Contact</h2>
-     <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
+        <h2>Contact</h2>
+        <form>
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-    
-    <button type="submit">Submit</button>
-     </form>
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
       </section>
 
       <footer>
