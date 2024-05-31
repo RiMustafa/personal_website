@@ -6,29 +6,6 @@ html, body {
   height: 100%;
 }
 
-html {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 
 
 .App {
@@ -136,16 +113,38 @@ body {
   flex-direction: column;
 }
 
-.proj-1 { grid-area: 1 / 1 / 2 / 2; 
-  background-image:url(/exploreit.png);
+.proj-1 {
+  grid-area: 1 / 1 / 2 / 2; 
+  background-image: url(/exploreit.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
 }
 
-.proj-2 { grid-area: 1 / 2 / 2 / 3; 
-  background-image:url(/riyan.png);
+
+.proj-2 {
+  grid-area: 1 / 2 / 2 / 3; 
+  background-image: url(/riyan1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
 }
 
-.proj-3 { grid-area: 1 / 3 / 2 / 3; 
-  background-image:url(/gadot.png);
+.proj-3 {
+  grid-area: 1 / 3 / 2 / 3; 
+  background-image: url(/gadot.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
 }
 
 .project-grid {
