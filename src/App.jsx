@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import LogoStyle from './components/LogoStyle';
+
+// eslint-disable-next-line react/prop-types
 const Modal = ({ id, onClose, children, isOpen }) => {
-  const closeModal = () => {
+  const closingModal = () => {
     onClose(id);
   };
 
   return (
     <div id={id} className="modal" style={{ display: isOpen ? 'block' : 'none' }}>
       <div className="modal-content">
-        <span className="close" onClick={closeModal}>&times;</span>
+        <span className="close" onClick={closingModal}>&times;</span>
         {children}
       </div>
     </div>
@@ -23,8 +25,11 @@ const App = () => {
     setOpenModalId(modalId);
   };
 
-  const closeModal = () => {
-    setOpenModalId('');
+  const closeModal = (modalId) => {
+    console.log("close modal called")
+    if (openModalId === modalId) {
+      setOpenModalId('');
+    }
   };
 
   return (
@@ -48,13 +53,13 @@ const App = () => {
         <div className="social-buttons">
           <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github"><i className="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="/resume.pdf" className="social-button linkedin" download ><i class="fa-solid fa-file"></i></a>
+          <a href="/resume.pdf" className="social-button linkedin" download ><i className="fa-solid fa-file"></i></a>
         </div>
       </section>
 
       <section id="about">
         <h2>About Me</h2>
-        <p>I'm a freelance web developer and recent college graduate with a degree in Computer Science! I am passionate about bringing a modern look and improved performance to the web through the use of frameworks like React and Vue. Although my professional focus has tailored toward the web, during my degree I accrued skills that allow me to create applications with a multitude of technologies and languages. Most recently I have been developing games with Python and building full-stack applications with relational based databases (specifically PostgreSQL).</p>
+        <p>I &apos; m a freelance web developer and recent college graduate with a degree in Computer Science! I am passionate about bringing a modern look and improved performance to the web through the use of frameworks like React and Vue. Although my professional focus has tailored toward the web, during my degree I accrued skills that allow me to create applications with a multitude of technologies and languages. Most recently I have been developing games with Python and building full-stack applications with relational based databases (specifically PostgreSQL).</p>
       </section>
 
       <section id="projects">
@@ -62,17 +67,17 @@ const App = () => {
         <div className="project-grid">
           <div className="proj-1">
             <div className="overlay">
-              <button className="learn-more-btn" onClick={() => openModal('modal1')}>Learn More</button>
+              <a className="learn-more-btn" onClick={() => openModal('modal1')}>Learn More</a>
             </div>
           </div>
           <div className="proj-2">
             <div className="overlay">
-              <button className="learn-more-btn" onClick={() => openModal('modal2')}>Learn More</button>
+              <a className="learn-more-btn" onClick={() => openModal('modal2')}>Learn More</a>
             </div>
           </div>
           <div className="proj-3">
             <div className="overlay">
-              <button className="learn-more-btn" onClick={() => openModal('modal3')}>Learn More</button>
+              <a className="learn-more-btn" onClick={() => openModal('modal3')}>Learn More</a>
             </div>
           </div>
         </div>
@@ -83,7 +88,7 @@ const App = () => {
       </Modal>
 
       <Modal id="modal2" onClose={closeModal} isOpen={openModalId === 'modal2'}>
-        <p>My personal portfolio website serves as a comprehensive project showcasing information about me and my ongoing and completed projects. It features details about my education, highlighting the schools I attended, as well as my proficiency in various programming languages. Through this platform, I aim to provide visitors with insights into my background, skills, and the projects I'm involved in, creating a centralized hub for my professional endeavors.</p>
+        <p>My personal portfolio website serves as a comprehensive project showcasing information about me and my ongoing and completed projects. It features details about my education, highlighting the schools I attended, as well as my proficiency in various programming languages. Through this platform, I aim to provide visitors with insights into my background, skills, and the projects I &apos; m involved in, creating a centralized hub for my professional endeavors.</p>
       </Modal>
 
       <Modal id="modal3" onClose={closeModal} isOpen={openModalId === 'modal3'}>
