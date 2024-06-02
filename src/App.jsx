@@ -53,35 +53,41 @@ const App = () => {
         <div className="social-buttons">
           <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github"><i className="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="/resume.pdf" className="social-button linkedin" download ><i className="fa-solid fa-file"></i></a>
+          <a href="/myresume.pdf" className="social-button linkedin" download ><i className="fa-solid fa-file"></i></a>
         </div>
       </section>
 
       <section id="about">
         <h2>About Me</h2>
-        <p>I &apos; m a freelance web developer and recent college graduate with a degree in Computer Science! I am passionate about bringing a modern look and improved performance to the web through the use of frameworks like React and Vue. Although my professional focus has tailored toward the web, during my degree I accrued skills that allow me to create applications with a multitude of technologies and languages. Most recently I have been developing games with Python and building full-stack applications with relational based databases (specifically PostgreSQL).</p>
+        <p>I'm a freelance web developer and recent college graduate with a degree in Computer Science! I am passionate about bringing a modern look and improved performance to the web through the use of frameworks like React and Vue. Although my professional focus has tailored toward the web, during my degree I accrued skills that allow me to create applications with a multitude of technologies and languages. Most recently I have been developing games with Python and building full-stack applications with relational based databases (specifically PostgreSQL).</p>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div className="project-grid">
-          <div className="proj-1">
-            <div className="overlay">
-              <a className="learn-more-btn" onClick={() => openModal('modal1')}>Learn More</a>
-            </div>
-          </div>
-          <div className="proj-2">
-            <div className="overlay">
-              <a className="learn-more-btn" onClick={() => openModal('modal2')}>Learn More</a>
-            </div>
-          </div>
-          <div className="proj-3">
-            <div className="overlay">
-              <a className="learn-more-btn" onClick={() => openModal('modal3')}>Learn More</a>
-            </div>
-          </div>
-        </div>
-      </section>
+<section id="projects">
+  <h2>Projects</h2>
+  <div className="project-grid">
+    <div className="proj-1">
+      <div className="overlay">
+        <a className="learn-more-btn" onClick={() => openModal('modal1')}>Learn More</a>
+      </div>
+    </div>
+    <div className="proj-2">
+      <div className="overlay">
+        <a className="learn-more-btn" onClick={() => openModal('modal2')}>Learn More</a>
+      </div>
+    </div>
+    <div className="proj-3">
+      <div className="overlay">
+        <a className="learn-more-btn" onClick={() => openModal('modal3')}>Learn More</a>
+      </div>
+    </div>
+    <div className="proj-4">
+      <div className="overlay">
+        <a className="learn-more-btn" onClick={() => openModal('modal4')}>Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <Modal id="modal1" onClose={closeModal} isOpen={openModalId === 'modal1'}>
         <p>The Greater Cleveland Partnership (GCP) is an organization dedicated to helping high school and college students prepare for their careers. In line with this mission, they required a job-search tool to assist their students in finding employment opportunities. Previous iterations of the app were primarily focused on Northeast Ohio. However, the main goal of the project was to enhance the searching potential by expanding the tool to include other locations and adding more detailed search parameters. This expansion aimed to provide students with a broader range of job opportunities and better match their skills and preferences with available positions.</p>
@@ -93,6 +99,10 @@ const App = () => {
 
       <Modal id="modal3" onClose={closeModal} isOpen={openModalId === 'modal3'}>
         <p>Project 3 details...</p>
+      </Modal>
+
+      <Modal id="modal4" onClose={closeModal} isOpen={openModalId === 'modal4'}>
+        <p>My GoLang currency converter efficiently converts between currencies using pre-defined exchange rates. It calculates conversions accurately based on user input, ensuring reliability and precision. Error handling mechanisms are in place to handle any unexpected scenarios, providing a robust user experience.</p>
       </Modal>
 
       <section id="education">
