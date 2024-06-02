@@ -53,7 +53,7 @@ const App = () => {
         <div className="social-buttons">
           <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github"><i className="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="/myresume.pdf" className="social-button linkedin" download ><i className="fa-solid fa-file"></i></a>
+          <a href="/myresume2.pdf" className="social-button linkedin" download ><i className="fa-solid fa-file"></i></a>
         </div>
       </section>
 
