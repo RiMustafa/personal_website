@@ -48,7 +48,7 @@ const App = () => {
         <div className="social-buttons">
           <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github"><i className="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.linkedin.com/in/riyanmustafa/overlay/1717031371146/single-media-viewer/?profileId=ACoAAELFvWUB-mdcWsUIzhaTIZZQv8PowfecCUM" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i class="fa-solid fa-file"></i></a>
+          <a href="/resume.pdf" className="social-button linkedin" download ><i class="fa-solid fa-file"></i></a>
         </div>
       </section>
 

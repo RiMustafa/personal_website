@@ -7,7 +7,6 @@ html, body {
 }
 
 
-
 .App {
   width: 80%;
   margin: auto;
@@ -240,6 +239,17 @@ html, body {
   flex-direction: column;
 }
 
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.education-item img {
+  margin-right: 20px;
+}
+
+
 #skills {
   text-align: left;
 }
@@ -280,7 +290,7 @@ align-items: center;
 }
 
 .logo i {
-  font-size: 4em;
+  font-size: 2em;
 }
 
 #contact {
