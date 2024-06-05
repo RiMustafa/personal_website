@@ -49,7 +49,6 @@ const App = () => {
 
       <section id="home" className="hero">
         <h1>Riyan Mustafa</h1>
-        <p>Aspiring Software Engineer</p>
         <div className="social-buttons">
           <a href="https://github.com/RiMustafa" target="_blank" rel="noopener noreferrer" className="social-button github"><i className="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/riyan-mustafa-ab1207273/" target="_blank" rel="noopener noreferrer" className="social-button linkedin"><i className="fa-brands fa-linkedin"></i></a>
@@ -102,7 +101,7 @@ const App = () => {
       </Modal>
 
       <Modal id="modal4" onClose={closeModal} isOpen={openModalId === 'modal4'}>
-        <p>My GoLang currency converter efficiently converts between currencies using pre-defined exchange rates. It calculates conversions accurately based on user input, ensuring reliability and precision. Error handling mechanisms are in place to handle any unexpected scenarios, providing a robust user experience.</p>
+        <p>My GoLang currency converter efficiently converts between currencies using pre-defined exchange rates. It calculates conversions accurately based on user input, ensuring reliability and precision. Error handling mechanisms are in place to handle any unexpected scenarios, providing a robust user experience. (included in Github)</p>
       </Modal>
 
       <section id="education">
